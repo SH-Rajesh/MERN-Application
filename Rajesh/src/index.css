@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.animate-glow {
+    transition: box-shadow 0.5s ease-in-out;
+}

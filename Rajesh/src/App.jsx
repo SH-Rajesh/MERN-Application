@@ -5,9 +5,12 @@ import Signin from "./pages/Signin.jsx";
 import Signup from "./pages/Signup.jsx";
 import Profile from "./pages/Profile.jsx";
 import About from "./pages/About.jsx";
+import {Header} from './components/Header.jsx';
 
 export default function App() {
-    return <BrowserRouter>
+    return (
+        <BrowserRouter>
+            <Header /> {/* Ensure Header is imported and used properly */}
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/Signin" element={<Signin/>}/>
@@ -16,4 +19,5 @@ export default function App() {
             <Route path="/profile" element={<Profile/>}/>
         </Routes>
     </BrowserRouter>
+    );
 }
