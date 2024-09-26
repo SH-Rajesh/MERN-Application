@@ -4,3 +4,6 @@
 .animate-glow {
     transition: box-shadow 0.5s ease-in-out;
 }
+body{
+    background-color:rgb(241,245,241);
+}
