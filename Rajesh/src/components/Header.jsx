@@ -25,7 +25,7 @@ export function Header() {
                 </form>
                 <ul className='flex gap-2'>
                     <Link to='/'><li className='hidden sm:inline text-slate-700 hover:text-green-400 font-bold py-2 px-4 rounded shadow-md hover:shadow-lg hover:shadow-blue-500/50 transition duration-300'>Home</li></Link>
-                    <Link to='/About'><li className='hidden sm:inline text-slate-700 hover:text-green-400 font-bold py-2 px-4 rounded shadow-md hover:shadow-lg hover:shadow-blue-500/50 transition duration-300'>About</li></Link>
+                    <Link to='/About'><li className=' sm:inline text-slate-700 hover:text-green-400 font-bold py-2 px-4 rounded shadow-md hover:shadow-lg hover:shadow-blue-500/50 transition duration-300'>About</li></Link>
                     <Link to='/Signin'><li className=' sm:inline text-slate-700 hover:text-green-400 font-bold py-2 px-4 rounded shadow-md hover:shadow-lg hover:shadow-blue-500/50 transition duration-300'>SignIn</li></Link>
                 </ul>
             </div>
