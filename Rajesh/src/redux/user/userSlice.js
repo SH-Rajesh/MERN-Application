@@ -24,3 +24,24 @@ const userSlice = createSlice({
 });
 export const { signInStart, signInSuccess, signInFailure } = userSlice.actions;
 export default userSlice.reducer;
+
+export class updateUserStart {
+}
+
+export class updateUserSuccess {
+}
+
+export class updateUserFailure {
+}
+
+export class deleteUserFailure {
+}
+
+export class deleteUserStart {
+}
+
+export class deleteUserSuccess {
+}
+
+export class signOutUserStart {
+}
