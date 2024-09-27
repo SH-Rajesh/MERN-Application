@@ -20,6 +20,9 @@ module.exports = {
         // Define the glow animation with a duration and infinite loop
         glow: 'glow 3s linear infinite',
       },
+      fontFamily: {
+        myriad: ['"myriad pro"', 'serif'], // Add Lucida Fax font family
+      },
     },
   },
   plugins: [],

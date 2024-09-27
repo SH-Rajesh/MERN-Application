@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Authentication from "../components/Authentication.jsx";
 
 export default function Signup() {
     const [formData, setFormData] = useState({});
@@ -74,10 +75,11 @@ export default function Signup() {
                 <button
                     disabled={loading} // Disable button when loading
                     type="submit"
-                    className="bg-slate-700 text-white p-3 rounded-lg uppercase text-center hover:text-green-400 font-bold py-2 px-4 shadow-md hover:shadow-lg hover:shadow-blue-500/50 transition duration-300"
+                    className="font-myriad text-lg bg-slate-700 text-white p-3 rounded-lg  text-center hover:text-green-400 font-bold py-2 px-4 shadow-md hover:shadow-lg hover:shadow-blue-500/50 transition duration-300"
                 >
                     {loading ? "Loading..." : "Sign Up"} {/* Button text changes based on loading */}
                 </button>
+                <Authentication/>
             </form>
 
             <div className="flex gap-2 mt-5">
