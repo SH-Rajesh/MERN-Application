@@ -52,8 +52,8 @@ export default function Signin() {
 
     return (
         <div className="p-3 max-w-lg mx-auto">
-            <h1 className="text-3xl text-center font-semibold my-7">Sign Up</h1>
-            <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
+            <h1 className="text-3xl text-center font-semibold my-7 font-myriad">Sign In</h1>
+            <form className="flex flex-col gap-3 font-myriad text-lg" onSubmit={handleSubmit}>
                 <input
                     type="email"
                     placeholder="Email"
@@ -72,18 +72,17 @@ export default function Signin() {
                 <button
                     disabled={loading} // Disable button when loading
                     type="submit"
-                    className=" font-myriad text-lg bg-slate-700 text-white p-3 rounded-lg  text-center hover:text-green-400 font-bold py-2 px-4 shadow-md hover:shadow-lg hover:shadow-blue-500/50 transition duration-300"
+                    className=" font-myriad text-2xl bg-slate-700 text-white p-3 rounded-lg  text-center hover:text-green-400 font-bold py-2 px-4 shadow-md hover:shadow-lg hover:shadow-blue-500/50 transition duration-300"
                 >
                     {loading ? "Loading..." : "Sign In"} {/* Button text changes based on loading */}
                 </button>
                 <Authentication />
-
             </form>
 
             <div className="flex gap-2 mt-5">
-                <p>Don't have an account?</p>
+                <p className='font-myriad text-lg'>Don't have an account?</p>
                 <Link to="/signup">
-                    <span className="text-blue-600">Sign Up</span>
+                    <span className=" text-blue-600 font-myriad text-lg">Sign Up</span>
                 </Link>
             </div>
             {error && <p className="text-red-500 mt-5">{error}</p>} {/* Error message */}

@@ -10,8 +10,8 @@ export function Header() {
             <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
                 <Link to='/'>
                 <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'>
-                    <span className='text-slate-500'>Rajesh</span>
-                    <span className='text-slate-700'>Sharma</span>
+                    <span className=' font-myriad text-3xl text-slate-500'>Rajesh</span>
+                    <span className='font-myriad text-3xl text-slate-700'>Sharma</span>
                 </h1>
                 </Link>
                 <form className='bg-slate-100 p-3 rounded-lg flex items-center text-black font-bold py-3 px-4 animate-glow'>
@@ -26,13 +26,13 @@ export function Header() {
                     </button>
                 </form>
                 <ul className='flex gap-2'>
-                    <Link to='/'><li className='hidden sm:inline text-slate-700 hover:text-green-400 font-bold py-2 px-4 rounded shadow-md hover:shadow-lg hover:shadow-blue-500/50 transition duration-300'>Home</li></Link>
-                    <Link to='/About'><li className=' sm:inline text-slate-700 hover:text-green-400 font-bold py-2 px-4 rounded shadow-md hover:shadow-lg hover:shadow-blue-500/50 transition duration-300'>About</li></Link>
+                    <Link to='/'><li className=' font-myriad text-lg hidden sm:inline text-slate-700 hover:text-green-400 font-bold py-2 px-4 rounded shadow-md hover:shadow-lg hover:shadow-blue-500/50 transition duration-300'>Home</li></Link>
+                    <Link to='/About'><li className='font-myriad text-lg sm:inline text-slate-700 hover:text-green-400 font-bold py-2 px-4 rounded shadow-md hover:shadow-lg hover:shadow-blue-500/50 transition duration-300'>About</li></Link>
                     <Link to='/profile'>
                         {currentUser ?(
                             <img className='rounded-full h-8 w-8 object-cover' src={currentUser.avatar} alt='image missing'/>
                         ): (
-                            <li className=' sm:inline text-slate-700 hover:text-green-400 font-bold py-2 px-4 rounded shadow-md hover:shadow-lg hover:shadow-blue-500/50 transition duration-300'>SignIn</li>
+                            <li className='font-myriad text-lg sm:inline text-slate-700 hover:text-green-400 font-bold py-2 px-4 rounded shadow-md hover:shadow-lg hover:shadow-blue-500/50 transition duration-300'>SignIn</li>
 
                             )}
                     </Link>

@@ -120,8 +120,8 @@ export default function Profile() {
 
     return (
         <div className='p-3 max-w-lg mx-auto'>
-            <h1 className='text-3xl font-semibold text-center my-7'>Profile</h1>
-            <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
+            <h1 className='font-myriad text-3xl font-semibold text-center my-7'>Profile</h1>
+            <form onSubmit={handleSubmit} className='flex flex-col gap-3 font-myriad text-lg'>
                 <input
                     onChange={(e) => setFile(e.target.files[0])}
                     type='file'
@@ -132,7 +132,7 @@ export default function Profile() {
                 <img
                     onClick={() => fileRef.current.click()}
                     src={formData.avatar || currentUser.avatar}
-                    alt='profile'
+                    alt='image missing'
                     className='rounded-full h-24 w-24 object-cover cursor-pointer self-center mt-2'
                 />
                 <p className='text-sm self-center'>
@@ -173,8 +173,7 @@ export default function Profile() {
                 />
                 <button
                     disabled={loading}
-                    className='bg-slate-700 text-white rounded-lg p-3 uppercase hover:opacity-95 disabled:opacity-80'
-                >
+                    className='font-myriad text-lg bg-slate-700 text-white p-3 rounded-lg  text-center hover:text-green-400 font-bold py-2 px-4 shadow-md hover:shadow-lg hover:shadow-blue-500/50 transition duration-300'>
                     {loading ? 'Loading...' : 'Update'}
                 </button>
             </form>
@@ -185,13 +184,13 @@ export default function Profile() {
         >
           Delete account
         </span>
-                <span onClick={handleSignOut} className='text-red-700 cursor-pointer'>
+                <span onClick={handleSignOut} className='font-myriad text-lg text-red-700 cursor-pointer'>
           Sign out
         </span>
             </div>
 
-            <p className='text-red-700 mt-5'>{error ? error : ''}</p>
-            <p className='text-green-700 mt-5'>
+            <p className='text-red-700 mt-5 font-myriad text-lg'>{error ? error : ''}</p>
+            <p className='text-green-700 mt-5 font-myriad text-lg'>
                 {updateSuccess ? 'User is updated successfully!' : ''}
             </p>
         </div>

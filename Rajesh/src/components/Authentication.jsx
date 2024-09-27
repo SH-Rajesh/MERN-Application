@@ -31,7 +31,7 @@ export default function Authentication() {
         <button
             type="button"
             onClick={handleGoogleClick}
-            className="text-lg font-myriad bg-red-700 text-white p-3 rounded-lg text-center hover:text-green-400 font-bold py-2 px-4 shadow-md hover:shadow-lg hover:shadow-blue-500/50 transition duration-300"
+            className="text-2xl font-myriad bg-red-700 text-white p-3 rounded-lg text-center hover:text-green-400 font-bold py-2 px-4 shadow-md hover:shadow-lg hover:shadow-blue-500/50 transition duration-300"
         >
             Continue With Google
         </button>
