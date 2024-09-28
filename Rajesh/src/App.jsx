@@ -7,11 +7,14 @@ import Profile from "./pages/Profile.jsx";
 import About from "./pages/About.jsx";
 import {Header} from './components/Header.jsx';
 import PrivatetRoute from "./components/PrivatetRoute.jsx";
+import Headroom from 'react-headroom';
 
 export default function App() {
     return (
         <BrowserRouter>
-            <Header /> {/* Ensure Header is imported and used properly */}
+            <Headroom>
+                <Header /> {/* Ensure Header is imported and used properly */}
+            </Headroom>
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/Signin" element={<Signin/>}/>
